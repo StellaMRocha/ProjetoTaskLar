@@ -1,0 +1,101 @@
+/* Reset global de margin e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da aplicação */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff; /* Cor de fundo branca */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #000000; /* Cor de texto preta */
+}
+
+/* Layout do App */
+.App {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  background-color: #c8eef3; /* Azul bem claro para o fundo do formulário */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da logo */
+.login-logo {
+  width: 250px; /* Tamanho da logo */
+  margin-bottom: 20px;
+}
+
+/* Título do formulário */
+h2 {
+  color: #1d3557; /* Azul escuro */
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Estilo dos campos de input */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #81d4fa; /* Azul claro para a borda */
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  color: #000000; /* Texto preto */
+}
+
+/* Estilo do botão de login */
+button {
+  background-color: #0d3344; /* Azul claro para o botão */
+  color: #ffffff; /* Texto branco */
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+  background-color: #0a7583; /* Azul mais forte no hover */
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Estilo do link para "Esqueceu a senha?" */
+.forgot-password {
+  color: #2b3941; /* Azul mais forte */
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: #e63946; /* Cor vermelha no hover */
+}
+
+/* Estilo responsivo para telas pequenas */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+  input[type="email"],
+  input[type="password"],
+  button {
+    width: 100%;
+  }
+}

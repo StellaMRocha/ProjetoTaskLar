@@ -1,0 +1,77 @@
+/* src/components/ServiceCard/ServiceCard.css */
+
+/* Cartão de serviço */
+.service-card {
+  border: 1px solid #ddd;
+  padding: 15px;  /* Reduzido o padding para um layout mais compacto */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;  /* Reduzido a margem */
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  width: calc(33.33% - 20px);  /* Cartões em 3 colunas */
+  max-width: 320px;  /* Máxima largura do cartão */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+.service-card h3 {
+  color: #333;
+  font-size: 18px;  /* Font-size do título ajustado */
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Descrição */
+.service-card p {
+  font-size: 14px;  /* Font-size da descrição ajustado */
+  color: #666;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.service-card strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Link para visualização de perfil */
+.view-profile-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;  /* Ajustado o padding */
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.view-profile-link:hover {
+  background-color: #45a049;
+}
+
+.view-profile-link:focus {
+  outline: none;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .service-card {
+    width: calc(50% - 20px);  /* Dois cartões por linha em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%;  /* Um cartão por linha em telas pequenas */
+  }
+}

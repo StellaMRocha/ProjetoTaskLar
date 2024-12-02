@@ -1,0 +1,63 @@
+/* Reset global de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da aplicação */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightblue; /* Cor de fundo lightblue */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #000000; /* Cor de texto preta */
+  }
+  
+  /* Layout do Dashboard */
+  .dashboard-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    background-color: #011530; /* Cor verde (#3CB371) para o fundo do formulário */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo do logo no Dashboard */
+  .dashboard-logo {
+    width: 200px; 
+    margin-bottom: 20px;
+  }
+  
+  /* Título do Dashboard */
+  .dashboard-header h2 {
+    color: #ffffff; 
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* Estilo do botão de logout */
+  .logout-btn {
+    background-color: #efefef; /* Verde escuro para o botão */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Efeito de hover no botão */
+  .logout-btn:hover {
+    background-color: #d9dfdb; 
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+  }
+  
